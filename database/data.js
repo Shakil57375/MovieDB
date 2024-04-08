@@ -391,7 +391,7 @@ const getMovies = () => {
 };
 
 const getMoviesById = (id) => {
-    return movieList.results((movie) => movie.id === id);
+    return movieList.results.find((movie) => movie.id == id);
 };
 
 export { getMovies, getMoviesById };
