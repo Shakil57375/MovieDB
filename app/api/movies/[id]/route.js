@@ -1,9 +1,17 @@
-import { getMoviesById } from "@/database/data"
-import { NextResponse } from "next/server"
+import { getMovies, getMoviesById } from "@/database/data";
+import { NextResponse } from "next/server";
 
-export async function GET(request, {params}){
-    const movieId = params?.id
-    console.log(movieId)
-    const data = await getMoviesById(movieId)
-    return NextResponse.json(data)
+export async function GET(request, { params }) {
+    const movieId = params?.id;
+    const data = getMoviesById(movieId);
+    return NextResponse.json(data);
+}
+
+export async function PATCH(request, { params }) {
+    const movie = await request.json();
+    const movieId = params.id;
+    const movieData = getMovies();
+    const movieIndex = movieData.findIndex((movie)=> movie.id === parseInt(movieId))
+    movieData[movieIndex].title = movie.title
+    return Response.json(movieData[movieIndex]);
 }
