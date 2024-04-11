@@ -11,7 +11,20 @@ export async function PATCH(request, { params }) {
     const movie = await request.json();
     const movieId = params.id;
     const movieData = getMovies();
-    const movieIndex = movieData.findIndex((movie)=> movie.id === parseInt(movieId))
-    movieData[movieIndex].title = movie.title
+    const movieIndex = movieData.findIndex(
+        (movie) => movie.id === parseInt(movieId)
+    );
+    movieData[movieIndex].title = movie.title;
     return Response.json(movieData[movieIndex]);
+}
+
+export async function DELETE(_request, { params }) {
+    const movieId = params.id;
+    const movieData = getMovies();
+    const movieIndex = movieData.findIndex(
+        (movie) => movie.id === parseInt(movieId)
+    );
+    const deleteMovie = movieData[movieIndex];
+    movieData.splice(movieIndex, 1);
+    return Response.json(deleteMovie);
 }
