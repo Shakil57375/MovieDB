@@ -8,15 +8,15 @@ const Header = () => {
     return (
         <div>
             <header>
-                <nav class="container flex items-center justify-between space-x-10 py-6">
+                <nav className="container flex items-center justify-between space-x-10 py-6">
                     <a href="index.html">
                         <Image src={logo} alt="logo" width={139} height={26} />
                     </a>
 
-                    <ul class="flex items-center space-x-5">
+                    <ul className="flex items-center space-x-5">
                         <li>
                             <a
-                                class="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block"
+                                className="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block"
                                 href="#"
                             >
                                 <Image
@@ -29,7 +29,7 @@ const Header = () => {
                         </li>
                         <li>
                             <a
-                                class="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block"
+                                className="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block"
                                 href="#"
                             >
                                 <Image
@@ -42,7 +42,7 @@ const Header = () => {
                         </li>
                         <li>
                             <a
-                                class="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block"
+                                className="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block"
                                 href="#"
                             >
                                 <Image
