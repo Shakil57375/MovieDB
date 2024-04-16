@@ -3,5 +3,11 @@
     "newRelease": "New Release",
     "comingSoon": "Coming soon",
     "favourites": "Favourites",
-    "watchLater": "Watch Later"
+    "watchLater": "Watch Later",
+    "release_date" : "Release Date",
+    "average_vote" : "Average Vote",
+    "vote_count" : "Vote Count",
+    "popularity" : "Popularity",
+    "stream_in_hd" : "Stream In HD",
+    "download_in_hd" : "Download In HD"
 }

@@ -28,7 +28,7 @@ const MovieCard = ({ movie }) => {
                 </div>
                 <Link
                     className="bg-primary rounded-lg py-2 px-5 flex items-center justify-center gap-2 text-[#171923] font-semibold text-sm"
-                    href={`${movie.id}`}
+                    href={`/movies/${movie.id}`}
                 >
                     <Image src={tag} width={24} height={24} alt="ring" />
                     <span>Details</span>

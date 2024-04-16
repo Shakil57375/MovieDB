@@ -3,5 +3,11 @@
     "newRelease": "নতুন মুক্তিপ্রাপ্ত",
     "comingSoon": "শীঘ্রই আসছে",
     "favourites": "প্রিয়",
-    "watchLater": "পরে দেখুন"
+    "watchLater": "পরে দেখুন",
+    "release_date": "মুক্তির দিন",
+    "average_vote": "গড় ভোট",
+    "vote_count": "ভোট গণনা",
+    "popularity": "জনপ্রিয়তা",
+    "stream_in_hd": "HD তে দেখুন",
+    "download_in_hd": "HD তে ডাউনলোড করুন"
 }

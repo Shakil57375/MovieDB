@@ -1,12 +1,13 @@
-import React from 'react'
+import MovieDetails from "@/components/MovieDetails";
+import React from "react";
 
-const MovieDetailsPage = ({params}) => {
-    const {id, lang} = params
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const MovieDetailsPage = ({ params }) => {
+    const { id, lang } = params;
+    return (
+        <div>
+            <MovieDetails id={id} lang={lang} />
+        </div>
+    );
+};
 
-export default MovieDetailsPage
+export default MovieDetailsPage;

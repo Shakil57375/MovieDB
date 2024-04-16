@@ -4,15 +4,15 @@ import ring from "../public/ring.svg";
 import sun from "../public/icons/sun.svg";
 import shoppingCart from "../public/shopping-cart.svg";
 import Image from "next/image";
+import Link from "next/link";
 const Header = () => {
     return (
         <div>
             <header>
                 <nav className="container flex items-center justify-between space-x-10 py-6">
-                    <a href="index.html">
+                    <Link href="/">
                         <Image src={logo} alt="logo" width={139} height={26} />
-                    </a>
-
+                    </Link>
                     <ul className="flex items-center space-x-5">
                         <li>
                             <a
